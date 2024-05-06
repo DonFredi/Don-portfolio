@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Don's portfolio website">
+    <title>Don Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/87deff6956.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('nav a');
+            const currentPage = window.location.pathname;
+
+            links.forEach(function (link) {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+
+                link.addEventListener('click', function () {
+
+                    links.forEach(function (link) {
+                        link.classList.remove('active');
+                    });
+                    // Add "active" class to the clicked link
+                    this.classList.add('active');
+                });
+            });
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            document.getElementById("currentYear").innerHTML = "Copyright ©" + year + ".All Rights Reserved.";
+
+        });
+
+    </script>
+
+
+
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+    <h1>Welcome to my portfolio website</h1>
+    <section id="about">
+        <div class="about-div">
+            <img src="Images/photo.jpg" alt="remote worker">
+            <p>Hello and welcome! I'm Fred, a passionate front-end website developer with a keen eye for design and a
+                love
+                for creating engaging online experiences..</p>
+        </div>
+        <h2>About Me</h2>
+        <p>I've always been fascinated by the intersection of technology and creativity, which led me to pursue a career
+            in web development. With 2 years of experience in the field, I've had the opportunity to work on a diverse
+            range of projects, from sleek corporate websites to interactive web applications.</p>
+
+        <p>My expertise lies in crafting elegant, user-friendly interfaces using the latest web technologies such as
+            HTML5, CSS3,Tailwind,JavaScript and React. I specialize in turning design mockups into pixel-perfect,
+            responsive websites that not only look great but also perform flawlessly across devices and browsers.</p>
+
+    </section>
+    <hr>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Take a look at some of my recent projects to get a feel for my style and capabilities. From minimalist
+            landing pages to dynamic web applications, each project showcases my dedication to quality and creativity.
+        </p>
+        <div class="container">
+
+            <div class="project">
+                <h3>Project Title</h3>
+                <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="buttons">
+                    <a href="#" class="btn">View Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Project Title</h3>
+                <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="buttons">
+                    <a href="#" class="btn">View Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Project Title</h3>
+                <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="buttons">
+                    <a href="#" class="btn">View Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    <hr>
+    <section id="contacts">
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>Name:</strong>Fredrick Nunda</li>
+            <li><strong>Email:</strong> dondadi.fn@gmail.com</li>
+            <li><strong>Phone:</strong> (+254) 700-347329</li>
+            <li><strong>Address:</strong>Nairobi City,Kenya</li>
+        </ul>
+
+
+        <h2>Let's connect</h2>
+        <p>I'm always open to new opportunities and collaborations. Whether you're looking to revamp your website or
+            embark on a fresh project, I'd love to hear from you. Get in touch today to discuss how we can work together
+            to make your web presence shine!</p>
+
+        <div class="contact-icons"> <i class="fa-solid fa-envelope"></i><a href="mailto:john@example.com">Email</a>
+        </div>
+        <div class="contact-icons"><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+        <div class="contact-icons"><i class="fa-brands fa-tiktok"></i><a href="https://TikTok.com">TikTok</a></div>
+        <div class="contact-icons"> <i class="fa-brands fa-youtube"></i> <a href="https://youtube.com/">Youtube</a>
+        </div>
+        <div class="contact-icons"> <i class="fa-solid fa-phone"></i> <a href="https://youtube.com/">Call/Text</a></div>
+
+        <p>Thank you for visiting my portfolio. I look forward to the possibility of working with you!</p>
+    </section>
+
+    <footer>
+        <p id="currentYear"></p>
+
+    </footer>
+
+</body>
+
+</html>
