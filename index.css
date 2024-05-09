@@ -9,6 +9,9 @@ body {
     background: linear-gradient(135deg, #6FB1FC, #FFA500);
     scroll-behavior: smooth;
     font-size: 17px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
 }
 
 h1 {
@@ -175,13 +178,13 @@ nav a.active {
 
 footer {
     background-color: #214559;
-    height: 55px;
     color: white;
     font-size: 20px;
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    padding: 2px;
+    padding: 0.5rem;
+    bottom: 0;
 }
 
 @media screen and (max-width: 994px) {
