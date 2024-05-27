@@ -133,6 +133,26 @@ h1 {
     font-weight: bolder;
 }
 
+#project2 {
+    background-image: url('Images/recipe.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+#project3 {
+    background-image: url('Images/music.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
 .btn {
     color: white;
     background-color: #214559;
