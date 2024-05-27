@@ -72,12 +72,12 @@ h1 {
 }
 
 .about-div {
-    padding: 2px;
+
     display: flex;
-    justify-content: between;
+    justify-content: around;
     flex-direction: row;
     align-items: flex-start;
-    gap: 5px;
+    gap: 8px;
 }
 
 #about img {
